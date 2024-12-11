@@ -1,0 +1,482 @@
+[
+ {
+  "InstFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/3Way_pipeline.sv",
+  "InstLine" : 1,
+  "InstName" : "three_way_pipeline",
+  "ModuleFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/3Way_pipeline.sv",
+  "ModuleLine" : 1,
+  "ModuleName" : "three_way_pipeline",
+  "SubInsts" : [
+   {
+    "InstFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/3Way_pipeline.sv",
+    "InstLine" : 56,
+    "InstName" : "[0].round_inst",
+    "ModuleFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/round.sv",
+    "ModuleLine" : 2,
+    "ModuleName" : "round",
+    "SubInsts" : [
+     {
+      "InstFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/round.sv",
+      "InstLine" : 11,
+      "InstName" : "linear_inst",
+      "ModuleFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/linear.sv",
+      "ModuleLine" : 1,
+      "ModuleName" : "linear"
+     },
+     {
+      "InstFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/round.sv",
+      "InstLine" : 16,
+      "InstName" : "pi1_inst",
+      "ModuleFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/pi1.sv",
+      "ModuleLine" : 1,
+      "ModuleName" : "pi1"
+     },
+     {
+      "InstFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/round.sv",
+      "InstLine" : 21,
+      "InstName" : "nonlinear_inst",
+      "ModuleFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/nonlinear.sv",
+      "ModuleLine" : 1,
+      "ModuleName" : "nonlinear"
+     },
+     {
+      "InstFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/round.sv",
+      "InstLine" : 26,
+      "InstName" : "pi2_inst",
+      "ModuleFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/pi2.sv",
+      "ModuleLine" : 1,
+      "ModuleName" : "pi2"
+     }
+    ]
+   },
+   {
+    "InstFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/3Way_pipeline.sv",
+    "InstLine" : 56,
+    "InstName" : "[1].round_inst",
+    "ModuleFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/round.sv",
+    "ModuleLine" : 2,
+    "ModuleName" : "round",
+    "SubInsts" : [
+     {
+      "InstFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/round.sv",
+      "InstLine" : 11,
+      "InstName" : "linear_inst",
+      "ModuleFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/linear.sv",
+      "ModuleLine" : 1,
+      "ModuleName" : "linear"
+     },
+     {
+      "InstFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/round.sv",
+      "InstLine" : 16,
+      "InstName" : "pi1_inst",
+      "ModuleFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/pi1.sv",
+      "ModuleLine" : 1,
+      "ModuleName" : "pi1"
+     },
+     {
+      "InstFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/round.sv",
+      "InstLine" : 21,
+      "InstName" : "nonlinear_inst",
+      "ModuleFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/nonlinear.sv",
+      "ModuleLine" : 1,
+      "ModuleName" : "nonlinear"
+     },
+     {
+      "InstFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/round.sv",
+      "InstLine" : 26,
+      "InstName" : "pi2_inst",
+      "ModuleFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/pi2.sv",
+      "ModuleLine" : 1,
+      "ModuleName" : "pi2"
+     }
+    ]
+   },
+   {
+    "InstFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/3Way_pipeline.sv",
+    "InstLine" : 56,
+    "InstName" : "[2].round_inst",
+    "ModuleFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/round.sv",
+    "ModuleLine" : 2,
+    "ModuleName" : "round",
+    "SubInsts" : [
+     {
+      "InstFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/round.sv",
+      "InstLine" : 11,
+      "InstName" : "linear_inst",
+      "ModuleFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/linear.sv",
+      "ModuleLine" : 1,
+      "ModuleName" : "linear"
+     },
+     {
+      "InstFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/round.sv",
+      "InstLine" : 16,
+      "InstName" : "pi1_inst",
+      "ModuleFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/pi1.sv",
+      "ModuleLine" : 1,
+      "ModuleName" : "pi1"
+     },
+     {
+      "InstFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/round.sv",
+      "InstLine" : 21,
+      "InstName" : "nonlinear_inst",
+      "ModuleFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/nonlinear.sv",
+      "ModuleLine" : 1,
+      "ModuleName" : "nonlinear"
+     },
+     {
+      "InstFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/round.sv",
+      "InstLine" : 26,
+      "InstName" : "pi2_inst",
+      "ModuleFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/pi2.sv",
+      "ModuleLine" : 1,
+      "ModuleName" : "pi2"
+     }
+    ]
+   },
+   {
+    "InstFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/3Way_pipeline.sv",
+    "InstLine" : 56,
+    "InstName" : "[3].round_inst",
+    "ModuleFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/round.sv",
+    "ModuleLine" : 2,
+    "ModuleName" : "round",
+    "SubInsts" : [
+     {
+      "InstFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/round.sv",
+      "InstLine" : 11,
+      "InstName" : "linear_inst",
+      "ModuleFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/linear.sv",
+      "ModuleLine" : 1,
+      "ModuleName" : "linear"
+     },
+     {
+      "InstFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/round.sv",
+      "InstLine" : 16,
+      "InstName" : "pi1_inst",
+      "ModuleFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/pi1.sv",
+      "ModuleLine" : 1,
+      "ModuleName" : "pi1"
+     },
+     {
+      "InstFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/round.sv",
+      "InstLine" : 21,
+      "InstName" : "nonlinear_inst",
+      "ModuleFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/nonlinear.sv",
+      "ModuleLine" : 1,
+      "ModuleName" : "nonlinear"
+     },
+     {
+      "InstFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/round.sv",
+      "InstLine" : 26,
+      "InstName" : "pi2_inst",
+      "ModuleFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/pi2.sv",
+      "ModuleLine" : 1,
+      "ModuleName" : "pi2"
+     }
+    ]
+   },
+   {
+    "InstFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/3Way_pipeline.sv",
+    "InstLine" : 56,
+    "InstName" : "[4].round_inst",
+    "ModuleFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/round.sv",
+    "ModuleLine" : 2,
+    "ModuleName" : "round",
+    "SubInsts" : [
+     {
+      "InstFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/round.sv",
+      "InstLine" : 11,
+      "InstName" : "linear_inst",
+      "ModuleFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/linear.sv",
+      "ModuleLine" : 1,
+      "ModuleName" : "linear"
+     },
+     {
+      "InstFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/round.sv",
+      "InstLine" : 16,
+      "InstName" : "pi1_inst",
+      "ModuleFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/pi1.sv",
+      "ModuleLine" : 1,
+      "ModuleName" : "pi1"
+     },
+     {
+      "InstFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/round.sv",
+      "InstLine" : 21,
+      "InstName" : "nonlinear_inst",
+      "ModuleFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/nonlinear.sv",
+      "ModuleLine" : 1,
+      "ModuleName" : "nonlinear"
+     },
+     {
+      "InstFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/round.sv",
+      "InstLine" : 26,
+      "InstName" : "pi2_inst",
+      "ModuleFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/pi2.sv",
+      "ModuleLine" : 1,
+      "ModuleName" : "pi2"
+     }
+    ]
+   },
+   {
+    "InstFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/3Way_pipeline.sv",
+    "InstLine" : 56,
+    "InstName" : "[5].round_inst",
+    "ModuleFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/round.sv",
+    "ModuleLine" : 2,
+    "ModuleName" : "round",
+    "SubInsts" : [
+     {
+      "InstFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/round.sv",
+      "InstLine" : 11,
+      "InstName" : "linear_inst",
+      "ModuleFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/linear.sv",
+      "ModuleLine" : 1,
+      "ModuleName" : "linear"
+     },
+     {
+      "InstFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/round.sv",
+      "InstLine" : 16,
+      "InstName" : "pi1_inst",
+      "ModuleFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/pi1.sv",
+      "ModuleLine" : 1,
+      "ModuleName" : "pi1"
+     },
+     {
+      "InstFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/round.sv",
+      "InstLine" : 21,
+      "InstName" : "nonlinear_inst",
+      "ModuleFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/nonlinear.sv",
+      "ModuleLine" : 1,
+      "ModuleName" : "nonlinear"
+     },
+     {
+      "InstFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/round.sv",
+      "InstLine" : 26,
+      "InstName" : "pi2_inst",
+      "ModuleFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/pi2.sv",
+      "ModuleLine" : 1,
+      "ModuleName" : "pi2"
+     }
+    ]
+   },
+   {
+    "InstFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/3Way_pipeline.sv",
+    "InstLine" : 56,
+    "InstName" : "[6].round_inst",
+    "ModuleFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/round.sv",
+    "ModuleLine" : 2,
+    "ModuleName" : "round",
+    "SubInsts" : [
+     {
+      "InstFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/round.sv",
+      "InstLine" : 11,
+      "InstName" : "linear_inst",
+      "ModuleFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/linear.sv",
+      "ModuleLine" : 1,
+      "ModuleName" : "linear"
+     },
+     {
+      "InstFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/round.sv",
+      "InstLine" : 16,
+      "InstName" : "pi1_inst",
+      "ModuleFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/pi1.sv",
+      "ModuleLine" : 1,
+      "ModuleName" : "pi1"
+     },
+     {
+      "InstFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/round.sv",
+      "InstLine" : 21,
+      "InstName" : "nonlinear_inst",
+      "ModuleFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/nonlinear.sv",
+      "ModuleLine" : 1,
+      "ModuleName" : "nonlinear"
+     },
+     {
+      "InstFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/round.sv",
+      "InstLine" : 26,
+      "InstName" : "pi2_inst",
+      "ModuleFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/pi2.sv",
+      "ModuleLine" : 1,
+      "ModuleName" : "pi2"
+     }
+    ]
+   },
+   {
+    "InstFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/3Way_pipeline.sv",
+    "InstLine" : 56,
+    "InstName" : "[7].round_inst",
+    "ModuleFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/round.sv",
+    "ModuleLine" : 2,
+    "ModuleName" : "round",
+    "SubInsts" : [
+     {
+      "InstFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/round.sv",
+      "InstLine" : 11,
+      "InstName" : "linear_inst",
+      "ModuleFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/linear.sv",
+      "ModuleLine" : 1,
+      "ModuleName" : "linear"
+     },
+     {
+      "InstFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/round.sv",
+      "InstLine" : 16,
+      "InstName" : "pi1_inst",
+      "ModuleFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/pi1.sv",
+      "ModuleLine" : 1,
+      "ModuleName" : "pi1"
+     },
+     {
+      "InstFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/round.sv",
+      "InstLine" : 21,
+      "InstName" : "nonlinear_inst",
+      "ModuleFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/nonlinear.sv",
+      "ModuleLine" : 1,
+      "ModuleName" : "nonlinear"
+     },
+     {
+      "InstFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/round.sv",
+      "InstLine" : 26,
+      "InstName" : "pi2_inst",
+      "ModuleFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/pi2.sv",
+      "ModuleLine" : 1,
+      "ModuleName" : "pi2"
+     }
+    ]
+   },
+   {
+    "InstFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/3Way_pipeline.sv",
+    "InstLine" : 56,
+    "InstName" : "[8].round_inst",
+    "ModuleFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/round.sv",
+    "ModuleLine" : 2,
+    "ModuleName" : "round",
+    "SubInsts" : [
+     {
+      "InstFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/round.sv",
+      "InstLine" : 11,
+      "InstName" : "linear_inst",
+      "ModuleFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/linear.sv",
+      "ModuleLine" : 1,
+      "ModuleName" : "linear"
+     },
+     {
+      "InstFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/round.sv",
+      "InstLine" : 16,
+      "InstName" : "pi1_inst",
+      "ModuleFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/pi1.sv",
+      "ModuleLine" : 1,
+      "ModuleName" : "pi1"
+     },
+     {
+      "InstFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/round.sv",
+      "InstLine" : 21,
+      "InstName" : "nonlinear_inst",
+      "ModuleFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/nonlinear.sv",
+      "ModuleLine" : 1,
+      "ModuleName" : "nonlinear"
+     },
+     {
+      "InstFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/round.sv",
+      "InstLine" : 26,
+      "InstName" : "pi2_inst",
+      "ModuleFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/pi2.sv",
+      "ModuleLine" : 1,
+      "ModuleName" : "pi2"
+     }
+    ]
+   },
+   {
+    "InstFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/3Way_pipeline.sv",
+    "InstLine" : 56,
+    "InstName" : "[9].round_inst",
+    "ModuleFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/round.sv",
+    "ModuleLine" : 2,
+    "ModuleName" : "round",
+    "SubInsts" : [
+     {
+      "InstFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/round.sv",
+      "InstLine" : 11,
+      "InstName" : "linear_inst",
+      "ModuleFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/linear.sv",
+      "ModuleLine" : 1,
+      "ModuleName" : "linear"
+     },
+     {
+      "InstFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/round.sv",
+      "InstLine" : 16,
+      "InstName" : "pi1_inst",
+      "ModuleFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/pi1.sv",
+      "ModuleLine" : 1,
+      "ModuleName" : "pi1"
+     },
+     {
+      "InstFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/round.sv",
+      "InstLine" : 21,
+      "InstName" : "nonlinear_inst",
+      "ModuleFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/nonlinear.sv",
+      "ModuleLine" : 1,
+      "ModuleName" : "nonlinear"
+     },
+     {
+      "InstFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/round.sv",
+      "InstLine" : 26,
+      "InstName" : "pi2_inst",
+      "ModuleFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/pi2.sv",
+      "ModuleLine" : 1,
+      "ModuleName" : "pi2"
+     }
+    ]
+   },
+   {
+    "InstFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/3Way_pipeline.sv",
+    "InstLine" : 56,
+    "InstName" : "[10].round_inst",
+    "ModuleFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/round.sv",
+    "ModuleLine" : 2,
+    "ModuleName" : "round",
+    "SubInsts" : [
+     {
+      "InstFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/round.sv",
+      "InstLine" : 11,
+      "InstName" : "linear_inst",
+      "ModuleFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/linear.sv",
+      "ModuleLine" : 1,
+      "ModuleName" : "linear"
+     },
+     {
+      "InstFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/round.sv",
+      "InstLine" : 16,
+      "InstName" : "pi1_inst",
+      "ModuleFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/pi1.sv",
+      "ModuleLine" : 1,
+      "ModuleName" : "pi1"
+     },
+     {
+      "InstFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/round.sv",
+      "InstLine" : 21,
+      "InstName" : "nonlinear_inst",
+      "ModuleFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/nonlinear.sv",
+      "ModuleLine" : 1,
+      "ModuleName" : "nonlinear"
+     },
+     {
+      "InstFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/round.sv",
+      "InstLine" : 26,
+      "InstName" : "pi2_inst",
+      "ModuleFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/pi2.sv",
+      "ModuleLine" : 1,
+      "ModuleName" : "pi2"
+     }
+    ]
+   },
+   {
+    "InstFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/3Way_pipeline.sv",
+    "InstLine" : 49,
+    "InstName" : "[11].linear_inst",
+    "ModuleFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/linear.sv",
+    "ModuleLine" : 1,
+    "ModuleName" : "linear"
+   }
+  ]
+ }
+]

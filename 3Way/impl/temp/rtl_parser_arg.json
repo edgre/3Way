@@ -1,0 +1,81 @@
+{
+ "Device" : "GW2A-18C",
+ "Files" : [
+  {
+   "Path" : "/home/kali/apka/3Way/3Way/src/arbiter.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/kali/apka/3Way/3Way/src/axis_adapter.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/kali/apka/3Way/3Way/src/axis_fifo.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/kali/apka/3Way/3Way/src/axis_fifo_adapter.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/kali/apka/3Way/3Way/src/gowin_rpll/gowin_rpll.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/kali/apka/3Way/3Way/src/priority_encoder.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/kali/apka/3Way/3Way/src/uart.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/kali/apka/3Way/3Way/src/uart_rx.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/kali/apka/3Way/3Way/src/uart_tx.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/kali/apka/3Way/rtl/3Way_pipeline.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/kali/apka/3Way/rtl/linear.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/kali/apka/3Way/rtl/nonlinear.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/kali/apka/3Way/rtl/pi1.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/kali/apka/3Way/rtl/pi2.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/kali/apka/3Way/rtl/round.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/kali/apka/3Way/rtl/synchronizer.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/kali/apka/3Way/rtl/top.sv",
+   "Type" : "verilog"
+  }
+ ],
+ "IncludePath" : [
+
+ ],
+ "LoopLimit" : 2000,
+ "ResultFile" : "/home/kali/apka/3Way/3Way/impl/temp/rtl_parser.result",
+ "Top" : "three_way_pipeline",
+ "VerilogStd" : "sysv",
+ "VhdlStd" : "vhdl_93"
+}

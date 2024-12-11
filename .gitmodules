@@ -1,0 +1,6 @@
+[submodule "core/verilog-axis"]
+	path = core/verilog-axis
+	url = https://github.com/alexforencich/verilog-axis
+[submodule "core/verilog-uart"]
+	path = core/verilog-uart
+	url = https://github.com/alexforencich/verilog-uart

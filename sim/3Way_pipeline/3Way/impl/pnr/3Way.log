@@ -1,0 +1,4 @@
+Reading netlist file: "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/impl/gwsynthesis/3Way.vg"
+Parsing netlist file "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/impl/gwsynthesis/3Way.vg" completed
+ERROR  (PA2024) : The number(294) of ports exceeds the resource limit 105 regular I/Os and 1 RECONFIG_N I/Os of current device, you can also use 4 JTAG, 5 SSPI, 4 MSPI, 1 READY and 1 DONE I/Os by configuring Dual-Purpose Pin as regular I/Os.
+NOTE  (PA0005) : Processing netlist completed with errors

@@ -1,0 +1,27 @@
+<?xml version="1" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device name="GW2A-18C" pn="GW2A-LV18PG256C8/I7">gw2a18c-011</Device>
+    <FileList>
+        <File path="src/arbiter.v" type="file.verilog" enable="1"/>
+        <File path="src/axis_adapter.v" type="file.verilog" enable="1"/>
+        <File path="src/axis_fifo.v" type="file.verilog" enable="1"/>
+        <File path="src/axis_fifo_adapter.v" type="file.verilog" enable="1"/>
+        <File path="src/gowin_rpll/gowin_rpll.v" type="file.verilog" enable="1"/>
+        <File path="src/priority_encoder.v" type="file.verilog" enable="1"/>
+        <File path="src/uart.v" type="file.verilog" enable="1"/>
+        <File path="src/uart_rx.v" type="file.verilog" enable="1"/>
+        <File path="src/uart_tx.v" type="file.verilog" enable="1"/>
+        <File path="/home/kali/apka/3Way/rtl/3Way_pipeline.sv" type="file.verilog" enable="1"/>
+        <File path="/home/kali/apka/3Way/rtl/linear.sv" type="file.verilog" enable="1"/>
+        <File path="/home/kali/apka/3Way/rtl/nonlinear.sv" type="file.verilog" enable="1"/>
+        <File path="/home/kali/apka/3Way/rtl/pi1.sv" type="file.verilog" enable="1"/>
+        <File path="/home/kali/apka/3Way/rtl/pi2.sv" type="file.verilog" enable="1"/>
+        <File path="/home/kali/apka/3Way/rtl/round.sv" type="file.verilog" enable="1"/>
+        <File path="/home/kali/apka/3Way/rtl/synchronizer.sv" type="file.verilog" enable="1"/>
+        <File path="/home/kali/apka/3Way/rtl/top.sv" type="file.verilog" enable="1"/>
+        <File path="/home/kali/apka/3Way/constr/pins.cst" type="file.cst" enable="1"/>
+    </FileList>
+</Project>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="three_way_pipeline" Register="1261" Lut="1" T_Register="1261(1261)" T_Lut="4623(1)">
+ <SubModule name="[0].round_inst" T_Lut="392(0)">
+  <SubModule name="nonlinear_inst" Lut="392" T_Lut="392(392)"/>
+ </SubModule>
+ <SubModule name="[1].round_inst" T_Lut="394(0)">
+  <SubModule name="nonlinear_inst" Lut="394" T_Lut="394(394)"/>
+ </SubModule>
+ <SubModule name="[2].round_inst" T_Lut="391(0)">
+  <SubModule name="nonlinear_inst" Lut="391" T_Lut="391(391)"/>
+ </SubModule>
+ <SubModule name="[3].round_inst" T_Lut="389(0)">
+  <SubModule name="nonlinear_inst" Lut="389" T_Lut="389(389)"/>
+ </SubModule>
+ <SubModule name="[4].round_inst" T_Lut="394(0)">
+  <SubModule name="nonlinear_inst" Lut="394" T_Lut="394(394)"/>
+ </SubModule>
+ <SubModule name="[5].round_inst" T_Lut="393(0)">
+  <SubModule name="nonlinear_inst" Lut="393" T_Lut="393(393)"/>
+ </SubModule>
+ <SubModule name="[6].round_inst" T_Lut="396(0)">
+  <SubModule name="nonlinear_inst" Lut="396" T_Lut="396(396)"/>
+ </SubModule>
+ <SubModule name="[7].round_inst" T_Lut="392(0)">
+  <SubModule name="nonlinear_inst" Lut="392" T_Lut="392(392)"/>
+ </SubModule>
+ <SubModule name="[8].round_inst" T_Lut="395(0)">
+  <SubModule name="nonlinear_inst" Lut="395" T_Lut="395(395)"/>
+ </SubModule>
+ <SubModule name="[9].round_inst" T_Lut="390(0)">
+  <SubModule name="nonlinear_inst" Lut="390" T_Lut="390(390)"/>
+ </SubModule>
+ <SubModule name="[10].round_inst" T_Lut="396(0)">
+  <SubModule name="nonlinear_inst" Lut="396" T_Lut="396(396)"/>
+ </SubModule>
+ <SubModule name="[11].linear_inst" Lut="300" T_Lut="300(300)"/>
+</Module>

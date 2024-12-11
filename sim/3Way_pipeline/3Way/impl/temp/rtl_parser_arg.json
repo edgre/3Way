@@ -1,0 +1,37 @@
+{
+ "Device" : "GW1N-9C",
+ "Files" : [
+  {
+   "Path" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/3Way_pipeline.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/linear.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/nonlinear.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/pi1.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/pi2.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/round.sv",
+   "Type" : "verilog"
+  }
+ ],
+ "IncludePath" : [
+
+ ],
+ "LoopLimit" : 2000,
+ "ResultFile" : "/home/kali/apka/3Way/sim/3Way_pipeline/3Way/impl/temp/rtl_parser.result",
+ "Top" : "",
+ "VerilogStd" : "sysv",
+ "VhdlStd" : "vhdl_93"
+}

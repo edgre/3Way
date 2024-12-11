@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gowin-synthesis-project>
+<Project>
+    <Version>beta</Version>
+    <Device id="GW1N-9C" package="eLQFP144" speed="6" partNumber="GW1N-UV9EQ144C6/I5"/>
+    <FileList>
+        <File path="/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/3Way_pipeline.sv" type="verilog"/>
+        <File path="/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/linear.sv" type="verilog"/>
+        <File path="/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/nonlinear.sv" type="verilog"/>
+        <File path="/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/pi1.sv" type="verilog"/>
+        <File path="/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/pi2.sv" type="verilog"/>
+        <File path="/home/kali/apka/3Way/sim/3Way_pipeline/3Way/src/round.sv" type="verilog"/>
+    </FileList>
+    <OptionList>
+        <Option type="disable_insert_pad" value="0"/>
+        <Option type="global_freq" value="50.000"/>
+        <Option type="looplimit" value="2000"/>
+        <Option type="output_file" value="/home/kali/apka/3Way/sim/3Way_pipeline/3Way/impl/gwsynthesis/3Way.vg"/>
+        <Option type="print_all_synthesis_warning" value="0"/>
+        <Option type="ram_rw_check" value="0"/>
+        <Option type="verilog_language" value="sysv-2017"/>
+        <Option type="vhdl_language" value="vhdl-1993"/>
+    </OptionList>
+</Project>

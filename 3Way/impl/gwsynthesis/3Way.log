@@ -1,0 +1,86 @@
+GowinSynthesis start
+Running parser ...
+Analyzing Verilog file '/home/kali/apka/3Way/3Way/src/arbiter.v'
+Analyzing Verilog file '/home/kali/apka/3Way/3Way/src/axis_adapter.v'
+Analyzing Verilog file '/home/kali/apka/3Way/3Way/src/axis_fifo.v'
+WARN  (EX3801) : Parameter 'ADDR_WIDTH' becomes localparam in 'axis_fifo' with formal parameter declaration list("/home/kali/apka/3Way/3Way/src/axis_fifo.v":137)
+WARN  (EX3801) : Parameter 'CL_KEEP_WDITH' becomes localparam in 'axis_fifo' with formal parameter declaration list("/home/kali/apka/3Way/3Way/src/axis_fifo.v":138)
+WARN  (EX3801) : Parameter 'OUTPUT_FIFO_ADDR_WIDTH' becomes localparam in 'axis_fifo' with formal parameter declaration list("/home/kali/apka/3Way/3Way/src/axis_fifo.v":140)
+Analyzing Verilog file '/home/kali/apka/3Way/3Way/src/axis_fifo_adapter.v'
+Analyzing Verilog file '/home/kali/apka/3Way/3Way/src/gowin_rpll/gowin_rpll.v'
+Analyzing Verilog file '/home/kali/apka/3Way/3Way/src/priority_encoder.v'
+WARN  (EX3801) : Parameter 'LEVELS' becomes localparam in 'priority_encoder' with formal parameter declaration list("/home/kali/apka/3Way/3Way/src/priority_encoder.v":47)
+WARN  (EX3801) : Parameter 'W' becomes localparam in 'priority_encoder' with formal parameter declaration list("/home/kali/apka/3Way/3Way/src/priority_encoder.v":48)
+Analyzing Verilog file '/home/kali/apka/3Way/3Way/src/uart.v'
+Analyzing Verilog file '/home/kali/apka/3Way/3Way/src/uart_rx.v'
+Analyzing Verilog file '/home/kali/apka/3Way/3Way/src/uart_tx.v'
+Analyzing Verilog file '/home/kali/apka/3Way/rtl/3Way_pipeline.sv'
+WARN  (EX3788) : Block identifier is required on this block("/home/kali/apka/3Way/rtl/3Way_pipeline.sv":77)
+Analyzing Verilog file '/home/kali/apka/3Way/rtl/linear.sv'
+Analyzing Verilog file '/home/kali/apka/3Way/rtl/nonlinear.sv'
+Analyzing Verilog file '/home/kali/apka/3Way/rtl/pi1.sv'
+Analyzing Verilog file '/home/kali/apka/3Way/rtl/pi2.sv'
+Analyzing Verilog file '/home/kali/apka/3Way/rtl/round.sv'
+Analyzing Verilog file '/home/kali/apka/3Way/rtl/synchronizer.sv'
+WARN  (EX3788) : Block identifier is required on this block("/home/kali/apka/3Way/rtl/synchronizer.sv":19)
+Analyzing Verilog file '/home/kali/apka/3Way/rtl/top.sv'
+Undeclared symbol 'new_reset', assumed default net type 'wire'("/home/kali/apka/3Way/rtl/top.sv":65)
+Compiling module 'three_way_pipeline'("/home/kali/apka/3Way/rtl/3Way_pipeline.sv":1)
+Compiling module 'round'("/home/kali/apka/3Way/rtl/round.sv":2)
+Compiling module 'linear'("/home/kali/apka/3Way/rtl/linear.sv":1)
+Compiling module 'pi1'("/home/kali/apka/3Way/rtl/pi1.sv":1)
+Compiling module 'nonlinear'("/home/kali/apka/3Way/rtl/nonlinear.sv":1)
+Compiling module 'pi2'("/home/kali/apka/3Way/rtl/pi2.sv":1)
+NOTE  (EX0101) : Current top module is "three_way_pipeline"
+[5%] Running netlist conversion ...
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+WARN  (NL0002) : The module "linear" instantiated to "linear_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":14)
+WARN  (NL0002) : The module "pi1" instantiated to "pi1_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":19)
+WARN  (NL0002) : The module "pi2" instantiated to "pi2_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":29)
+WARN  (NL0002) : The module "linear" instantiated to "linear_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":14)
+WARN  (NL0002) : The module "pi1" instantiated to "pi1_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":19)
+WARN  (NL0002) : The module "pi2" instantiated to "pi2_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":29)
+WARN  (NL0002) : The module "linear" instantiated to "linear_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":14)
+WARN  (NL0002) : The module "pi1" instantiated to "pi1_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":19)
+WARN  (NL0002) : The module "pi2" instantiated to "pi2_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":29)
+WARN  (NL0002) : The module "linear" instantiated to "linear_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":14)
+WARN  (NL0002) : The module "pi1" instantiated to "pi1_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":19)
+WARN  (NL0002) : The module "pi2" instantiated to "pi2_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":29)
+WARN  (NL0002) : The module "linear" instantiated to "linear_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":14)
+WARN  (NL0002) : The module "pi1" instantiated to "pi1_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":19)
+WARN  (NL0002) : The module "pi2" instantiated to "pi2_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":29)
+WARN  (NL0002) : The module "linear" instantiated to "linear_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":14)
+WARN  (NL0002) : The module "pi1" instantiated to "pi1_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":19)
+WARN  (NL0002) : The module "pi2" instantiated to "pi2_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":29)
+WARN  (NL0002) : The module "linear" instantiated to "linear_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":14)
+WARN  (NL0002) : The module "pi1" instantiated to "pi1_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":19)
+WARN  (NL0002) : The module "pi2" instantiated to "pi2_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":29)
+WARN  (NL0002) : The module "linear" instantiated to "linear_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":14)
+WARN  (NL0002) : The module "pi1" instantiated to "pi1_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":19)
+WARN  (NL0002) : The module "pi2" instantiated to "pi2_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":29)
+WARN  (NL0002) : The module "linear" instantiated to "linear_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":14)
+WARN  (NL0002) : The module "pi1" instantiated to "pi1_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":19)
+WARN  (NL0002) : The module "pi2" instantiated to "pi2_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":29)
+WARN  (NL0002) : The module "linear" instantiated to "linear_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":14)
+WARN  (NL0002) : The module "pi1" instantiated to "pi1_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":19)
+WARN  (NL0002) : The module "pi2" instantiated to "pi2_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":29)
+WARN  (NL0002) : The module "linear" instantiated to "linear_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":14)
+WARN  (NL0002) : The module "pi1" instantiated to "pi1_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":19)
+WARN  (NL0002) : The module "pi2" instantiated to "pi2_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":29)
+[95%] Generate netlist file "/home/kali/apka/3Way/3Way/impl/gwsynthesis/3Way.vg" completed
+[100%] Generate report file "/home/kali/apka/3Way/3Way/impl/gwsynthesis/3Way_syn.rpt.html" completed
+GowinSynthesis finish

@@ -4,22 +4,22 @@
     <Version>beta</Version>
     <Device id="GW2A-18C" package="PBGA256" speed="8" partNumber="GW2A-LV18PG256C8/I7"/>
     <FileList>
+        <File path="/home/kali/apka/3Way/3Way/src/3Way_pipeline.sv" type="verilog"/>
         <File path="/home/kali/apka/3Way/3Way/src/arbiter.v" type="verilog"/>
         <File path="/home/kali/apka/3Way/3Way/src/axis_adapter.v" type="verilog"/>
         <File path="/home/kali/apka/3Way/3Way/src/axis_fifo.v" type="verilog"/>
         <File path="/home/kali/apka/3Way/3Way/src/axis_fifo_adapter.v" type="verilog"/>
         <File path="/home/kali/apka/3Way/3Way/src/gowin_rpll/gowin_rpll.v" type="verilog"/>
+        <File path="/home/kali/apka/3Way/3Way/src/linear.sv" type="verilog"/>
+        <File path="/home/kali/apka/3Way/3Way/src/nonlinear.sv" type="verilog"/>
+        <File path="/home/kali/apka/3Way/3Way/src/pi1.sv" type="verilog"/>
+        <File path="/home/kali/apka/3Way/3Way/src/pi2.sv" type="verilog"/>
         <File path="/home/kali/apka/3Way/3Way/src/priority_encoder.v" type="verilog"/>
+        <File path="/home/kali/apka/3Way/3Way/src/round.sv" type="verilog"/>
+        <File path="/home/kali/apka/3Way/3Way/src/synchronizer.sv" type="verilog"/>
         <File path="/home/kali/apka/3Way/3Way/src/uart.v" type="verilog"/>
         <File path="/home/kali/apka/3Way/3Way/src/uart_rx.v" type="verilog"/>
         <File path="/home/kali/apka/3Way/3Way/src/uart_tx.v" type="verilog"/>
-        <File path="/home/kali/apka/3Way/rtl/3Way_pipeline.sv" type="verilog"/>
-        <File path="/home/kali/apka/3Way/rtl/linear.sv" type="verilog"/>
-        <File path="/home/kali/apka/3Way/rtl/nonlinear.sv" type="verilog"/>
-        <File path="/home/kali/apka/3Way/rtl/pi1.sv" type="verilog"/>
-        <File path="/home/kali/apka/3Way/rtl/pi2.sv" type="verilog"/>
-        <File path="/home/kali/apka/3Way/rtl/round.sv" type="verilog"/>
-        <File path="/home/kali/apka/3Way/rtl/synchronizer.sv" type="verilog"/>
         <File path="/home/kali/apka/3Way/rtl/top.sv" type="verilog"/>
     </FileList>
     <OptionList>
@@ -29,7 +29,7 @@
         <Option type="output_file" value="/home/kali/apka/3Way/3Way/impl/gwsynthesis/3Way.vg"/>
         <Option type="print_all_synthesis_warning" value="0"/>
         <Option type="ram_rw_check" value="0"/>
-        <Option type="top_module" value="three_way_pipeline"/>
+        <Option type="top_module" value="top"/>
         <Option type="verilog_language" value="sysv-2017"/>
         <Option type="vhdl_language" value="vhdl-1993"/>
     </OptionList>

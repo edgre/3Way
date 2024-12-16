@@ -17,8 +17,6 @@ void rndcon_gen(word32 strt, word32* rtab)
         rtab[i] = strt;
         strt <<= 1;
         if (strt&0x10000)strt ^= 0x11011;
-        printf("%04x", rtab[i]);
-        printf("\n");
     }
 }
 
@@ -66,9 +64,8 @@ void theta(word32* a)
 
 }
 
-void rho(word32* a, word32* key)
+void rho(word32* a)
 {
-    a[0] ^= key[0]; a[1] ^= key[1]; a[2] ^= key[2];
     theta(a);
     pi_1(a);
     gamma1(a);
@@ -86,7 +83,7 @@ void encrypt(word32* a, word32* k)
         a[0] ^= k[0] ^ (rcon[i] << 16);
         a[1] ^= k[1];
         a[2] ^= k[2] ^ rcon[i];
-        rho(a, k);
+        rho(a);
     }
     a[0] ^= k[0] ^ (rcon[NMBR] << 16);
     a[1] ^= k[1];
@@ -157,7 +154,7 @@ void check_round_en(char* ch)
         output_a[1] = input_a[1];
         output_a[2] = input_a[2];
         
-        if (ch=="round") rho(output_a, key);
+        if (ch=="round") rho(output_a);
         if (ch=="encrypt") encrypt(output_a, key);
         
         printf("Input:  %u %u %u\n", input_a[0], input_a[1], input_a[2]);

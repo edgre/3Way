@@ -2,7 +2,7 @@ DESIGN_NAME=round
 SRC_PATH=../../rtl
 #SRC_PATH1=/home/kali/pj/3Way
 C_PROGRAM_PATH=/home/kali/apka/3Way/Way.c  # Путь к программе на C
-C_OUTPUT_FILE=/home/kali/apka/3Way/sim/pi2/c_output.txt  # Файл для сохранения результата
+C_OUTPUT_FILE=/home/kali/apka/3Way/sim/round/c_output.txt  # Файл для сохранения результата
 
 all: synth run_c_program sim
 

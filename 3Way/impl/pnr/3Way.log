@@ -1,0 +1,29 @@
+Reading netlist file: "/home/kali/apka/3Way/3Way/impl/gwsynthesis/3Way.vg"
+Parsing netlist file "/home/kali/apka/3Way/3Way/impl/gwsynthesis/3Way.vg" completed
+Processing netlist completed
+Reading constraint file: "/home/kali/apka/3Way/constr/pins.cst"
+Physical Constraint parsed completed
+Running placement......
+[10%] Placement Phase 0 completed
+[20%] Placement Phase 1 completed
+[30%] Placement Phase 2 completed
+[50%] Placement Phase 3 completed
+Running routing......
+[60%] Routing Phase 0 completed
+[70%] Routing Phase 1 completed
+[80%] Routing Phase 2 completed
+[90%] Routing Phase 3 completed
+Running timing analysis......
+[95%] Timing analysis completed
+Placement and routing completed
+Bitstream generation in progress......
+Bitstream generation completed
+Running power analysis......
+[100%] Power analysis completed
+Generate file "/home/kali/apka/3Way/3Way/impl/pnr/3Way.power.html" completed
+Generate file "/home/kali/apka/3Way/3Way/impl/pnr/3Way.pin.html" completed
+Generate file "/home/kali/apka/3Way/3Way/impl/pnr/3Way.rpt.html" completed
+Generate file "/home/kali/apka/3Way/3Way/impl/pnr/3Way.rpt.txt" completed
+Generate file "/home/kali/apka/3Way/3Way/impl/pnr/3Way.tr.html" completed
+Sun Dec 15 00:38:21 2024
+

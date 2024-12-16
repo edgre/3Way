@@ -1,29 +1,6 @@
-/*module synchronizer #(
-  parameter STAGES = 2
-)(
-  input clk,
-
-  input   d,
-  output  q
-);
-
-logic pipeline [STAGES];
-
-generate
-  for (genvar i = 0; i < STAGES; i++) begin
-
-    always @(posedge clk) begin
-      pipeline[i] <= (i == 0) ? d : pipeline[i-1];
-    end
-
-  end
-endgenerate
-assign q = pipeline[STAGES-1];
-endmodule*/
-
 module top (
 input logic rst_n,
-input logic clk = 0,
+input logic clk,
 input logic rxd,
 output logic txd);
 
@@ -59,17 +36,17 @@ synchronizer #(
   .q(new_rst)
 );
 
-
-Gowin_rPLL PLL_inst(
-        .clkout(clk), //output clkout
-        .reset(new_reset), //input reset
-        .clkin(new_clk) //input clkin
-    );
+Gowin_rPLL pll_inst(
+        .clkout(new_clk), //output clkout
+        .reset(new_rst), //input reset
+        .clkin(clk) //input clkin
+);
     
- uart uart_pll(
+ uart uart_inst(
  .clk(new_clk),
  .rst(new_rst),
  .rxd(rxd),
+ .txd(txd),
  .s_axis_tdata(s_uart_tdata),
  .s_axis_tvalid(s_uart_tvalid),
  .s_axis_tready(s_uart_tready),
@@ -79,7 +56,7 @@ Gowin_rPLL PLL_inst(
  .prescale(100_000_000 / (115200 * 8))
  );
  
- three_way_pipeline cipher_pll(
+ three_way_pipeline cipher_inst(
  .rst(new_rst),
  .clk(new_clk),
  .key(key),
@@ -91,7 +68,13 @@ Gowin_rPLL PLL_inst(
  .m_axis_tready(m_cipher_tready)
  );
  
- axis_fifo fifo_in_cipher(
+ axis_fifo_adapter #(
+ .DEPTH(25),
+ .S_DATA_WIDTH(8),
+ .M_DATA_WIDTH(96),
+ .USER_ENABLE(0),
+ .RAM_PIPELINE(1)
+ ) fifo_in_cipher(
  .rst(new_rst),
  .clk(new_clk),
  .s_axis_tdata(m_uart_tdata),
@@ -102,19 +85,24 @@ Gowin_rPLL PLL_inst(
  .m_axis_tready(s_cipher_tready)
  );
  
- axis_fifo fifo_from_cipher(
+ axis_fifo_adapter #(
+ .DEPTH(25),
+ .S_DATA_WIDTH(96),
+ .M_DATA_WIDTH(8),
+ .USER_ENABLE(0),
+ .RAM_PIPELINE(1)
+ ) fifo_from_cipher(
  .rst(new_rst),
  .clk(new_clk),
  .s_axis_tdata(m_cipher_tdata),
  .s_axis_tvalid(m_cipher_tvalid),
  .s_axis_tready(m_cipher_tready),
- .s_axis_tkeep(96'hFFFFFFFFFFFFFFFFFFFFFFFF),
+ .s_axis_tkeep('1),
  .m_axis_tdata(s_uart_tdata),
  .m_axis_tvalid(s_uart_tvalid),
  .m_axis_tready(s_uart_tready)
  );
  
-
 endmodule
 
 

@@ -1,5 +1,7 @@
 GowinSynthesis start
 Running parser ...
+Analyzing Verilog file '/home/kali/apka/3Way/3Way/src/3Way_pipeline.sv'
+WARN  (EX3788) : Block identifier is required on this block("/home/kali/apka/3Way/3Way/src/3Way_pipeline.sv":77)
 Analyzing Verilog file '/home/kali/apka/3Way/3Way/src/arbiter.v'
 Analyzing Verilog file '/home/kali/apka/3Way/3Way/src/axis_adapter.v'
 Analyzing Verilog file '/home/kali/apka/3Way/3Way/src/axis_fifo.v'
@@ -8,30 +10,100 @@ WARN  (EX3801) : Parameter 'CL_KEEP_WDITH' becomes localparam in 'axis_fifo' wit
 WARN  (EX3801) : Parameter 'OUTPUT_FIFO_ADDR_WIDTH' becomes localparam in 'axis_fifo' with formal parameter declaration list("/home/kali/apka/3Way/3Way/src/axis_fifo.v":140)
 Analyzing Verilog file '/home/kali/apka/3Way/3Way/src/axis_fifo_adapter.v'
 Analyzing Verilog file '/home/kali/apka/3Way/3Way/src/gowin_rpll/gowin_rpll.v'
+Analyzing Verilog file '/home/kali/apka/3Way/3Way/src/linear.sv'
+Analyzing Verilog file '/home/kali/apka/3Way/3Way/src/nonlinear.sv'
+Analyzing Verilog file '/home/kali/apka/3Way/3Way/src/pi1.sv'
+Analyzing Verilog file '/home/kali/apka/3Way/3Way/src/pi2.sv'
 Analyzing Verilog file '/home/kali/apka/3Way/3Way/src/priority_encoder.v'
 WARN  (EX3801) : Parameter 'LEVELS' becomes localparam in 'priority_encoder' with formal parameter declaration list("/home/kali/apka/3Way/3Way/src/priority_encoder.v":47)
 WARN  (EX3801) : Parameter 'W' becomes localparam in 'priority_encoder' with formal parameter declaration list("/home/kali/apka/3Way/3Way/src/priority_encoder.v":48)
+Analyzing Verilog file '/home/kali/apka/3Way/3Way/src/round.sv'
+Analyzing Verilog file '/home/kali/apka/3Way/3Way/src/synchronizer.sv'
+WARN  (EX3788) : Block identifier is required on this block("/home/kali/apka/3Way/3Way/src/synchronizer.sv":19)
 Analyzing Verilog file '/home/kali/apka/3Way/3Way/src/uart.v'
 Analyzing Verilog file '/home/kali/apka/3Way/3Way/src/uart_rx.v'
 Analyzing Verilog file '/home/kali/apka/3Way/3Way/src/uart_tx.v'
-Analyzing Verilog file '/home/kali/apka/3Way/rtl/3Way_pipeline.sv'
-WARN  (EX3788) : Block identifier is required on this block("/home/kali/apka/3Way/rtl/3Way_pipeline.sv":77)
-Analyzing Verilog file '/home/kali/apka/3Way/rtl/linear.sv'
-Analyzing Verilog file '/home/kali/apka/3Way/rtl/nonlinear.sv'
-Analyzing Verilog file '/home/kali/apka/3Way/rtl/pi1.sv'
-Analyzing Verilog file '/home/kali/apka/3Way/rtl/pi2.sv'
-Analyzing Verilog file '/home/kali/apka/3Way/rtl/round.sv'
-Analyzing Verilog file '/home/kali/apka/3Way/rtl/synchronizer.sv'
-WARN  (EX3788) : Block identifier is required on this block("/home/kali/apka/3Way/rtl/synchronizer.sv":19)
 Analyzing Verilog file '/home/kali/apka/3Way/rtl/top.sv'
-Undeclared symbol 'new_reset', assumed default net type 'wire'("/home/kali/apka/3Way/rtl/top.sv":65)
-Compiling module 'three_way_pipeline'("/home/kali/apka/3Way/rtl/3Way_pipeline.sv":1)
-Compiling module 'round'("/home/kali/apka/3Way/rtl/round.sv":2)
-Compiling module 'linear'("/home/kali/apka/3Way/rtl/linear.sv":1)
-Compiling module 'pi1'("/home/kali/apka/3Way/rtl/pi1.sv":1)
-Compiling module 'nonlinear'("/home/kali/apka/3Way/rtl/nonlinear.sv":1)
-Compiling module 'pi2'("/home/kali/apka/3Way/rtl/pi2.sv":1)
-NOTE  (EX0101) : Current top module is "three_way_pipeline"
+WARN  (EX3073) : Port 'tx_busy' remains unconnected for this instance("/home/kali/apka/3Way/rtl/top.sv":57)
+WARN  (EX3073) : Port 's_axis_tkeep' remains unconnected for this instance("/home/kali/apka/3Way/rtl/top.sv":86)
+WARN  (EX3073) : Port 's_axis_tlast' remains unconnected for this instance("/home/kali/apka/3Way/rtl/top.sv":104)
+Compiling module 'top'("/home/kali/apka/3Way/rtl/top.sv":1)
+WARN  (EX3780) : Using initial value of 'key' since it is never assigned("/home/kali/apka/3Way/rtl/top.sv":9)
+Compiling module 'synchronizer'("/home/kali/apka/3Way/3Way/src/synchronizer.sv":1)
+Compiling module 'Gowin_rPLL'("/home/kali/apka/3Way/3Way/src/gowin_rpll/gowin_rpll.v":10)
+Compiling module 'uart'("/home/kali/apka/3Way/3Way/src/uart.v":32)
+Compiling module 'uart_tx'("/home/kali/apka/3Way/3Way/src/uart_tx.v":32)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 19("/home/kali/apka/3Way/3Way/src/uart_tx.v":88)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 19("/home/kali/apka/3Way/3Way/src/uart_tx.v":95)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 4("/home/kali/apka/3Way/3Way/src/uart_tx.v":103)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 19("/home/kali/apka/3Way/3Way/src/uart_tx.v":104)
+Compiling module 'uart_rx'("/home/kali/apka/3Way/3Way/src/uart_rx.v":32)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 19("/home/kali/apka/3Way/3Way/src/uart_rx.v":106)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 4("/home/kali/apka/3Way/3Way/src/uart_rx.v":110)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 19("/home/kali/apka/3Way/3Way/src/uart_rx.v":111)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 4("/home/kali/apka/3Way/3Way/src/uart_rx.v":117)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 19("/home/kali/apka/3Way/3Way/src/uart_rx.v":118)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 19("/home/kali/apka/3Way/3Way/src/uart_rx.v":133)
+WARN  (EX3670) : Actual bit length 32 differs from formal bit length 16 for port 'prescale'("/home/kali/apka/3Way/rtl/top.sv":56)
+Compiling module 'three_way_pipeline'("/home/kali/apka/3Way/3Way/src/3Way_pipeline.sv":1)
+Compiling module 'round'("/home/kali/apka/3Way/3Way/src/round.sv":2)
+Compiling module 'linear'("/home/kali/apka/3Way/3Way/src/linear.sv":1)
+Compiling module 'pi1'("/home/kali/apka/3Way/3Way/src/pi1.sv":1)
+Compiling module 'nonlinear'("/home/kali/apka/3Way/3Way/src/nonlinear.sv":1)
+Compiling module 'pi2'("/home/kali/apka/3Way/3Way/src/pi2.sv":1)
+Compiling module 'axis_fifo_adapter(DEPTH=25,M_DATA_WIDTH=96,USER_ENABLE=0)'("/home/kali/apka/3Way/3Way/src/axis_fifo_adapter.v":34)
+Compiling module 'axis_adapter(S_KEEP_ENABLE=1'b0,S_KEEP_WIDTH=1,M_DATA_WIDTH=96,M_KEEP_ENABLE=1'b1,M_KEEP_WIDTH=12,USER_ENABLE=0)'("/home/kali/apka/3Way/3Way/src/axis_adapter.v":34)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("/home/kali/apka/3Way/3Way/src/axis_adapter.v":198)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("/home/kali/apka/3Way/3Way/src/axis_adapter.v":206)
+Compiling module 'axis_fifo(DEPTH=25,DATA_WIDTH=96,KEEP_ENABLE=1'b1,KEEP_WIDTH=12,USER_ENABLE=0,DROP_OVERSIZE_FRAME=0,FRAME_PAUSE=0)'("/home/kali/apka/3Way/3Way/src/axis_fifo.v":34)
+Extracting RAM for identifier 'mem'("/home/kali/apka/3Way/3Way/src/axis_fifo.v":192)
+WARN  (EX3791) : Expression size 3 truncated to fit in target size 2("/home/kali/apka/3Way/3Way/src/axis_fifo.v":339)
+WARN  (EX3791) : Expression size 3 truncated to fit in target size 2("/home/kali/apka/3Way/3Way/src/axis_fifo.v":340)
+WARN  (EX3791) : Expression size 3 truncated to fit in target size 2("/home/kali/apka/3Way/3Way/src/axis_fifo.v":397)
+Compiling module 'axis_fifo_adapter(DEPTH=25,S_DATA_WIDTH=96,USER_ENABLE=0)'("/home/kali/apka/3Way/3Way/src/axis_fifo_adapter.v":34)
+Compiling module 'axis_adapter(S_DATA_WIDTH=96,S_KEEP_ENABLE=1'b1,S_KEEP_WIDTH=12,M_KEEP_ENABLE=1'b0,M_KEEP_WIDTH=1,USER_ENABLE=0)'("/home/kali/apka/3Way/3Way/src/axis_adapter.v":34)
+WARN  (EX3791) : Expression size 96 truncated to fit in target size 8("/home/kali/apka/3Way/3Way/src/axis_adapter.v":268)
+WARN  (EX3791) : Expression size 12 truncated to fit in target size 1("/home/kali/apka/3Way/3Way/src/axis_adapter.v":269)
+WARN  (EX2565) : Input 's_axis_tkeep[0]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("/home/kali/apka/3Way/rtl/top.sv":86)
+WARN  (EX2565) : Input 's_axis_tlast' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("/home/kali/apka/3Way/rtl/top.sv":86)
+WARN  (EX2565) : Input 's_axis_tid[7]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("/home/kali/apka/3Way/rtl/top.sv":86)
+WARN  (EX2565) : Input 's_axis_tid[6]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("/home/kali/apka/3Way/rtl/top.sv":86)
+WARN  (EX2565) : Input 's_axis_tid[5]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("/home/kali/apka/3Way/rtl/top.sv":86)
+WARN  (EX2565) : Input 's_axis_tid[4]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("/home/kali/apka/3Way/rtl/top.sv":86)
+WARN  (EX2565) : Input 's_axis_tid[3]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("/home/kali/apka/3Way/rtl/top.sv":86)
+WARN  (EX2565) : Input 's_axis_tid[2]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("/home/kali/apka/3Way/rtl/top.sv":86)
+WARN  (EX2565) : Input 's_axis_tid[1]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("/home/kali/apka/3Way/rtl/top.sv":86)
+WARN  (EX2565) : Input 's_axis_tid[0]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("/home/kali/apka/3Way/rtl/top.sv":86)
+WARN  (EX2565) : Input 's_axis_tdest[7]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("/home/kali/apka/3Way/rtl/top.sv":86)
+WARN  (EX2565) : Input 's_axis_tdest[6]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("/home/kali/apka/3Way/rtl/top.sv":86)
+WARN  (EX2565) : Input 's_axis_tdest[5]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("/home/kali/apka/3Way/rtl/top.sv":86)
+WARN  (EX2565) : Input 's_axis_tdest[4]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("/home/kali/apka/3Way/rtl/top.sv":86)
+WARN  (EX2565) : Input 's_axis_tdest[3]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("/home/kali/apka/3Way/rtl/top.sv":86)
+WARN  (EX2565) : Input 's_axis_tdest[2]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("/home/kali/apka/3Way/rtl/top.sv":86)
+WARN  (EX2565) : Input 's_axis_tdest[1]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("/home/kali/apka/3Way/rtl/top.sv":86)
+WARN  (EX2565) : Input 's_axis_tdest[0]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("/home/kali/apka/3Way/rtl/top.sv":86)
+WARN  (EX2565) : Input 's_axis_tuser[0]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("/home/kali/apka/3Way/rtl/top.sv":86)
+WARN  (EX2565) : Input 'pause_req' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("/home/kali/apka/3Way/rtl/top.sv":86)
+WARN  (EX2565) : Input 's_axis_tlast' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("/home/kali/apka/3Way/rtl/top.sv":104)
+WARN  (EX2565) : Input 's_axis_tid[7]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("/home/kali/apka/3Way/rtl/top.sv":104)
+WARN  (EX2565) : Input 's_axis_tid[6]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("/home/kali/apka/3Way/rtl/top.sv":104)
+WARN  (EX2565) : Input 's_axis_tid[5]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("/home/kali/apka/3Way/rtl/top.sv":104)
+WARN  (EX2565) : Input 's_axis_tid[4]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("/home/kali/apka/3Way/rtl/top.sv":104)
+WARN  (EX2565) : Input 's_axis_tid[3]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("/home/kali/apka/3Way/rtl/top.sv":104)
+WARN  (EX2565) : Input 's_axis_tid[2]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("/home/kali/apka/3Way/rtl/top.sv":104)
+WARN  (EX2565) : Input 's_axis_tid[1]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("/home/kali/apka/3Way/rtl/top.sv":104)
+WARN  (EX2565) : Input 's_axis_tid[0]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("/home/kali/apka/3Way/rtl/top.sv":104)
+WARN  (EX2565) : Input 's_axis_tdest[7]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("/home/kali/apka/3Way/rtl/top.sv":104)
+WARN  (EX2565) : Input 's_axis_tdest[6]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("/home/kali/apka/3Way/rtl/top.sv":104)
+WARN  (EX2565) : Input 's_axis_tdest[5]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("/home/kali/apka/3Way/rtl/top.sv":104)
+WARN  (EX2565) : Input 's_axis_tdest[4]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("/home/kali/apka/3Way/rtl/top.sv":104)
+WARN  (EX2565) : Input 's_axis_tdest[3]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("/home/kali/apka/3Way/rtl/top.sv":104)
+WARN  (EX2565) : Input 's_axis_tdest[2]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("/home/kali/apka/3Way/rtl/top.sv":104)
+WARN  (EX2565) : Input 's_axis_tdest[1]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("/home/kali/apka/3Way/rtl/top.sv":104)
+WARN  (EX2565) : Input 's_axis_tdest[0]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("/home/kali/apka/3Way/rtl/top.sv":104)
+WARN  (EX2565) : Input 's_axis_tuser[0]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("/home/kali/apka/3Way/rtl/top.sv":104)
+WARN  (EX2565) : Input 'pause_req' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("/home/kali/apka/3Way/rtl/top.sv":104)
+NOTE  (EX0101) : Current top module is "top"
 [5%] Running netlist conversion ...
 Running device independent optimization ...
 [10%] Optimizing Phase 0 completed
@@ -48,39 +120,39 @@ Running technical mapping ...
 [75%] Tech-Mapping Phase 2 completed
 [80%] Tech-Mapping Phase 3 completed
 [90%] Tech-Mapping Phase 4 completed
-WARN  (NL0002) : The module "linear" instantiated to "linear_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":14)
-WARN  (NL0002) : The module "pi1" instantiated to "pi1_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":19)
-WARN  (NL0002) : The module "pi2" instantiated to "pi2_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":29)
-WARN  (NL0002) : The module "linear" instantiated to "linear_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":14)
-WARN  (NL0002) : The module "pi1" instantiated to "pi1_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":19)
-WARN  (NL0002) : The module "pi2" instantiated to "pi2_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":29)
-WARN  (NL0002) : The module "linear" instantiated to "linear_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":14)
-WARN  (NL0002) : The module "pi1" instantiated to "pi1_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":19)
-WARN  (NL0002) : The module "pi2" instantiated to "pi2_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":29)
-WARN  (NL0002) : The module "linear" instantiated to "linear_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":14)
-WARN  (NL0002) : The module "pi1" instantiated to "pi1_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":19)
-WARN  (NL0002) : The module "pi2" instantiated to "pi2_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":29)
-WARN  (NL0002) : The module "linear" instantiated to "linear_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":14)
-WARN  (NL0002) : The module "pi1" instantiated to "pi1_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":19)
-WARN  (NL0002) : The module "pi2" instantiated to "pi2_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":29)
-WARN  (NL0002) : The module "linear" instantiated to "linear_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":14)
-WARN  (NL0002) : The module "pi1" instantiated to "pi1_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":19)
-WARN  (NL0002) : The module "pi2" instantiated to "pi2_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":29)
-WARN  (NL0002) : The module "linear" instantiated to "linear_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":14)
-WARN  (NL0002) : The module "pi1" instantiated to "pi1_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":19)
-WARN  (NL0002) : The module "pi2" instantiated to "pi2_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":29)
-WARN  (NL0002) : The module "linear" instantiated to "linear_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":14)
-WARN  (NL0002) : The module "pi1" instantiated to "pi1_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":19)
-WARN  (NL0002) : The module "pi2" instantiated to "pi2_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":29)
-WARN  (NL0002) : The module "linear" instantiated to "linear_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":14)
-WARN  (NL0002) : The module "pi1" instantiated to "pi1_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":19)
-WARN  (NL0002) : The module "pi2" instantiated to "pi2_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":29)
-WARN  (NL0002) : The module "linear" instantiated to "linear_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":14)
-WARN  (NL0002) : The module "pi1" instantiated to "pi1_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":19)
-WARN  (NL0002) : The module "pi2" instantiated to "pi2_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":29)
-WARN  (NL0002) : The module "linear" instantiated to "linear_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":14)
-WARN  (NL0002) : The module "pi1" instantiated to "pi1_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":19)
-WARN  (NL0002) : The module "pi2" instantiated to "pi2_inst" is swept in optimizing("/home/kali/apka/3Way/rtl/round.sv":29)
+WARN  (NL0002) : The module "linear" instantiated to "linear_inst" is swept in optimizing("/home/kali/apka/3Way/3Way/src/round.sv":14)
+WARN  (NL0002) : The module "pi1" instantiated to "pi1_inst" is swept in optimizing("/home/kali/apka/3Way/3Way/src/round.sv":19)
+WARN  (NL0002) : The module "pi2" instantiated to "pi2_inst" is swept in optimizing("/home/kali/apka/3Way/3Way/src/round.sv":29)
+WARN  (NL0002) : The module "linear" instantiated to "linear_inst" is swept in optimizing("/home/kali/apka/3Way/3Way/src/round.sv":14)
+WARN  (NL0002) : The module "pi1" instantiated to "pi1_inst" is swept in optimizing("/home/kali/apka/3Way/3Way/src/round.sv":19)
+WARN  (NL0002) : The module "pi2" instantiated to "pi2_inst" is swept in optimizing("/home/kali/apka/3Way/3Way/src/round.sv":29)
+WARN  (NL0002) : The module "linear" instantiated to "linear_inst" is swept in optimizing("/home/kali/apka/3Way/3Way/src/round.sv":14)
+WARN  (NL0002) : The module "pi1" instantiated to "pi1_inst" is swept in optimizing("/home/kali/apka/3Way/3Way/src/round.sv":19)
+WARN  (NL0002) : The module "pi2" instantiated to "pi2_inst" is swept in optimizing("/home/kali/apka/3Way/3Way/src/round.sv":29)
+WARN  (NL0002) : The module "linear" instantiated to "linear_inst" is swept in optimizing("/home/kali/apka/3Way/3Way/src/round.sv":14)
+WARN  (NL0002) : The module "pi1" instantiated to "pi1_inst" is swept in optimizing("/home/kali/apka/3Way/3Way/src/round.sv":19)
+WARN  (NL0002) : The module "pi2" instantiated to "pi2_inst" is swept in optimizing("/home/kali/apka/3Way/3Way/src/round.sv":29)
+WARN  (NL0002) : The module "linear" instantiated to "linear_inst" is swept in optimizing("/home/kali/apka/3Way/3Way/src/round.sv":14)
+WARN  (NL0002) : The module "pi1" instantiated to "pi1_inst" is swept in optimizing("/home/kali/apka/3Way/3Way/src/round.sv":19)
+WARN  (NL0002) : The module "pi2" instantiated to "pi2_inst" is swept in optimizing("/home/kali/apka/3Way/3Way/src/round.sv":29)
+WARN  (NL0002) : The module "linear" instantiated to "linear_inst" is swept in optimizing("/home/kali/apka/3Way/3Way/src/round.sv":14)
+WARN  (NL0002) : The module "pi1" instantiated to "pi1_inst" is swept in optimizing("/home/kali/apka/3Way/3Way/src/round.sv":19)
+WARN  (NL0002) : The module "pi2" instantiated to "pi2_inst" is swept in optimizing("/home/kali/apka/3Way/3Way/src/round.sv":29)
+WARN  (NL0002) : The module "linear" instantiated to "linear_inst" is swept in optimizing("/home/kali/apka/3Way/3Way/src/round.sv":14)
+WARN  (NL0002) : The module "pi1" instantiated to "pi1_inst" is swept in optimizing("/home/kali/apka/3Way/3Way/src/round.sv":19)
+WARN  (NL0002) : The module "pi2" instantiated to "pi2_inst" is swept in optimizing("/home/kali/apka/3Way/3Way/src/round.sv":29)
+WARN  (NL0002) : The module "linear" instantiated to "linear_inst" is swept in optimizing("/home/kali/apka/3Way/3Way/src/round.sv":14)
+WARN  (NL0002) : The module "pi1" instantiated to "pi1_inst" is swept in optimizing("/home/kali/apka/3Way/3Way/src/round.sv":19)
+WARN  (NL0002) : The module "pi2" instantiated to "pi2_inst" is swept in optimizing("/home/kali/apka/3Way/3Way/src/round.sv":29)
+WARN  (NL0002) : The module "linear" instantiated to "linear_inst" is swept in optimizing("/home/kali/apka/3Way/3Way/src/round.sv":14)
+WARN  (NL0002) : The module "pi1" instantiated to "pi1_inst" is swept in optimizing("/home/kali/apka/3Way/3Way/src/round.sv":19)
+WARN  (NL0002) : The module "pi2" instantiated to "pi2_inst" is swept in optimizing("/home/kali/apka/3Way/3Way/src/round.sv":29)
+WARN  (NL0002) : The module "linear" instantiated to "linear_inst" is swept in optimizing("/home/kali/apka/3Way/3Way/src/round.sv":14)
+WARN  (NL0002) : The module "pi1" instantiated to "pi1_inst" is swept in optimizing("/home/kali/apka/3Way/3Way/src/round.sv":19)
+WARN  (NL0002) : The module "pi2" instantiated to "pi2_inst" is swept in optimizing("/home/kali/apka/3Way/3Way/src/round.sv":29)
+WARN  (NL0002) : The module "linear" instantiated to "linear_inst" is swept in optimizing("/home/kali/apka/3Way/3Way/src/round.sv":14)
+WARN  (NL0002) : The module "pi1" instantiated to "pi1_inst" is swept in optimizing("/home/kali/apka/3Way/3Way/src/round.sv":19)
+WARN  (NL0002) : The module "pi2" instantiated to "pi2_inst" is swept in optimizing("/home/kali/apka/3Way/3Way/src/round.sv":29)
 [95%] Generate netlist file "/home/kali/apka/3Way/3Way/impl/gwsynthesis/3Way.vg" completed
 [100%] Generate report file "/home/kali/apka/3Way/3Way/impl/gwsynthesis/3Way_syn.rpt.html" completed
 GowinSynthesis finish

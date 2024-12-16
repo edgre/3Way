@@ -1,37 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Module name="three_way_pipeline" Register="1261" T_Register="1261(1261)" T_Lut="4619(0)">
- <SubModule name="[0].round_inst" T_Lut="393(0)">
-  <SubModule name="nonlinear_inst" Lut="393" T_Lut="393(393)"/>
+<Module name="top" T_Register="1983(0)" T_Lut="3712(0)" T_Ssram="51(0)">
+ <SubModule name="my_synchronizer_instance" Register="2" Lut="1" T_Register="2(2)" T_Lut="1(1)"/>
+ <SubModule name="pll_inst"/>
+ <SubModule name="uart_inst" T_Register="75(0)" T_Lut="127(0)">
+  <SubModule name="uart_tx_inst" Register="34" Lut="59" T_Register="34(34)" T_Lut="59(59)"/>
+  <SubModule name="uart_rx_inst" Register="41" Lut="68" T_Register="41(41)" T_Lut="68(68)"/>
  </SubModule>
- <SubModule name="[1].round_inst" T_Lut="394(0)">
-  <SubModule name="nonlinear_inst" Lut="394" T_Lut="394(394)"/>
+ <SubModule name="cipher_inst" Register="1261" T_Register="1261(1261)" T_Lut="3300(0)">
+  <SubModule name="[0].round_inst" T_Lut="284(0)">
+   <SubModule name="nonlinear_inst" Lut="284" T_Lut="284(284)"/>
+  </SubModule>
+  <SubModule name="[1].round_inst" T_Lut="286(0)">
+   <SubModule name="nonlinear_inst" Lut="286" T_Lut="286(286)"/>
+  </SubModule>
+  <SubModule name="[2].round_inst" T_Lut="277(0)">
+   <SubModule name="nonlinear_inst" Lut="277" T_Lut="277(277)"/>
+  </SubModule>
+  <SubModule name="[3].round_inst" T_Lut="284(0)">
+   <SubModule name="nonlinear_inst" Lut="284" T_Lut="284(284)"/>
+  </SubModule>
+  <SubModule name="[4].round_inst" T_Lut="281(0)">
+   <SubModule name="nonlinear_inst" Lut="281" T_Lut="281(281)"/>
+  </SubModule>
+  <SubModule name="[5].round_inst" T_Lut="285(0)">
+   <SubModule name="nonlinear_inst" Lut="285" T_Lut="285(285)"/>
+  </SubModule>
+  <SubModule name="[6].round_inst" T_Lut="279(0)">
+   <SubModule name="nonlinear_inst" Lut="279" T_Lut="279(279)"/>
+  </SubModule>
+  <SubModule name="[7].round_inst" T_Lut="283(0)">
+   <SubModule name="nonlinear_inst" Lut="283" T_Lut="283(283)"/>
+  </SubModule>
+  <SubModule name="[8].round_inst" T_Lut="287(0)">
+   <SubModule name="nonlinear_inst" Lut="287" T_Lut="287(287)"/>
+  </SubModule>
+  <SubModule name="[9].round_inst" T_Lut="285(0)">
+   <SubModule name="nonlinear_inst" Lut="285" T_Lut="285(285)"/>
+  </SubModule>
+  <SubModule name="[10].round_inst" T_Lut="281(0)">
+   <SubModule name="nonlinear_inst" Lut="281" T_Lut="281(281)"/>
+  </SubModule>
+  <SubModule name="[11].linear_inst" Lut="188" T_Lut="188(188)"/>
  </SubModule>
- <SubModule name="[2].round_inst" T_Lut="390(0)">
-  <SubModule name="nonlinear_inst" Lut="390" T_Lut="390(390)"/>
+ <SubModule name="fifo_in_cipher" T_Register="308(0)" T_Lut="47(0)" T_Ssram="24(0)">
+  <SubModule name="upsize_pre.adapter_inst" Register="110" Lut="36" T_Register="110(110)" T_Lut="36(36)"/>
+  <SubModule name="fifo_inst" Register="198" Lut="11" Ssram="24" T_Register="198(198)" T_Lut="11(11)" T_Ssram="24(24)"/>
  </SubModule>
- <SubModule name="[3].round_inst" T_Lut="390(0)">
-  <SubModule name="nonlinear_inst" Lut="390" T_Lut="390(390)"/>
+ <SubModule name="fifo_from_cipher" T_Register="337(0)" T_Lut="237(0)" T_Ssram="27(0)">
+  <SubModule name="fifo_inst" Register="220" Lut="10" Ssram="27" T_Register="220(220)" T_Lut="10(10)" T_Ssram="27(27)"/>
+  <SubModule name="downsize_post.adapter_inst" Register="117" Lut="227" T_Register="117(117)" T_Lut="227(227)"/>
  </SubModule>
- <SubModule name="[4].round_inst" T_Lut="394(0)">
-  <SubModule name="nonlinear_inst" Lut="394" T_Lut="394(394)"/>
- </SubModule>
- <SubModule name="[5].round_inst" T_Lut="393(0)">
-  <SubModule name="nonlinear_inst" Lut="393" T_Lut="393(393)"/>
- </SubModule>
- <SubModule name="[6].round_inst" T_Lut="393(0)">
-  <SubModule name="nonlinear_inst" Lut="393" T_Lut="393(393)"/>
- </SubModule>
- <SubModule name="[7].round_inst" T_Lut="390(0)">
-  <SubModule name="nonlinear_inst" Lut="390" T_Lut="390(390)"/>
- </SubModule>
- <SubModule name="[8].round_inst" T_Lut="396(0)">
-  <SubModule name="nonlinear_inst" Lut="396" T_Lut="396(396)"/>
- </SubModule>
- <SubModule name="[9].round_inst" T_Lut="393(0)">
-  <SubModule name="nonlinear_inst" Lut="393" T_Lut="393(393)"/>
- </SubModule>
- <SubModule name="[10].round_inst" T_Lut="395(0)">
-  <SubModule name="nonlinear_inst" Lut="395" T_Lut="395(395)"/>
- </SubModule>
- <SubModule name="[11].linear_inst" Lut="298" T_Lut="298(298)"/>
 </Module>
